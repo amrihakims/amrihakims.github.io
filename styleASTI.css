@@ -89,7 +89,7 @@ body
 	}
 img 
 	{
-		position:relative;
+		position:absolute;
 		width:250px;
 		left:480px;
 		margin:30px;
