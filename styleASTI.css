@@ -1,0 +1,190 @@
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* =============================================== */
+
+
+/* Content of CSS sytle belong to Amri Hakim S */
+body
+	{
+		height:2400px;
+		background-image: url(full-bloom.png);
+		margin:0;
+		font-family:arial;
+		position:relative;
+	}
+
+.PTName
+	{
+		font:bold 85px/100px sans,arial;
+		color:white;
+		text-align: center;
+		text-shadow: 5px 5px 5px black;
+		letter-spacing:20px;
+		margin-top:-30px;
+		margin-bottom:20px;
+		padding:0;
+	}
+
+.PTCall
+	{
+		color:white;
+		opacity:80%;
+		text-align:center;
+		letter-spacing:2px;
+		font:bold 35px/40px arial;
+		text-shadow: 5px 5px 5px black;
+		padding:0;
+	}
+
+.slogan
+	{
+		position:absolute;
+		color:gold;
+		left:380px;
+		font:italic 25px/30px sans;
+		padding:0;	
+	}
+img 
+	{
+		position:relative;
+		width:250px;
+		left:480px;
+		margin:30px;
+		filter: drop-shadow(5px 5px 5px black);
+	}
+
+.BGAbout
+	{
+		background-image:url(BGAbout.png);
+		height:450px;
+		width:100%;
+		background-size: cover;
+		filter: saturate(300%);
+		position:absolute;
+		z-index: -1;
+		left:0;
+		top:0;
+	}
+
+h1
+	{
+		color:darkgreen;
+		letter-spacing:2px;
+		background-color: lightgrey;
+		text-shadow: 5px 3px 5px white;
+		text-align:center;
+		padding:10px;
+		font:bold 37px/40px arial;
+	}
+
+
+h2
+	{
+		color:darkgreen;
+		margin-up:30px;
+		margin-left:50px;
+		padding:0;
+		font:bold 25px/30px arial;
+		text-shadow: 2px 2px 2px white;
+	}
+
+p
+	{
+		color:black;
+		text-align:justify;	
+		margin:0 50px;
+		font:normal 25px/35px sans-serif;
+		opacity:80%;
+		text-shadow: 2px 2px 2px lightblue;
+	}
+
+li
+	{
+		color:black;
+		text-align:justify;
+		font:normal 25px/35px arial;
+		text-align:justify;	
+		margin:10px 50px;
+		padding:10px;
+		word-spacing:1px;
+	}
+
+.contact
+	{
+		height:350px;
+		width:100%;
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		background-color: black;
+		opacity:70%;
+		color:white;
+		font:normal 20px/30px arial;
+		text-align:center;
+	}
+
+
+.logoISO1
+	{
+		background-image: url(ISO9001.jpg);
+		background-size:cover;
+		width:100px;
+		height:100px;
+		position:absolute;
+		bottom:400px;
+		right:50px;
+	}
+
+.logoISO2
+	{
+		background-image: url(ISO14001.jpg);
+		background-size:cover;
+		width:100px;
+		height:100px;
+		position:absolute;
+		bottom:400px;
+		right:200px;
+	}
