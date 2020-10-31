@@ -96,6 +96,8 @@ body
 		height:150px;
 		left:530px;
 		top:40px;
+		z-index:2;
+		filter:drop-shadow(5px 5px 5px black);
 	}
 
 .BGAbout
