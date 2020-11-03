@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Syle CSS Made by AMRI HAKIM S, Copyright (c) 2020 */
+
+body
+	{
+		background-image:url(crossline-dots.png);
+	}
+
+
+/* Block Fixed ============================ */
+.Overtop
+	{
+		width:100%;
+		position:fixed;
+		z-index:10;
+		filter:drop-shadow(3px 3px 3px green);
+		background-color:black;
+		opacity:30%;
+
+	}
+
+/* Setting Position, Animation of Navigator */
+
+.navigation
+	{
+		float:right;
+		margin-top:0;
+		margin-right:10px;
+	}
+
+.navigation a
+	{
+		text-decoration:none;
+		color:inherit;
+		font-weight: bold;
+		transition:0.3s;
+	}
+
+.navigation a:hover
+	{
+		background-color:lightgreen;
+		color:yellow;
+		font-size:25px;
+
+	}
+
+.navigation ul li
+	{
+		display:inline-block;
+		padding:15px;
+		text-shadow: 2px 2px 5px black;
+		color:white;
+	}
+
+
+/* Block Header ==================================== */
+
+.header
+	{
+		width:100%;
+		height:380px;
+		background-image:url(SmartWork.jpg);
+		background-size:100%;
+		background-position: 0 -200px;
+		animation:trainProgram 7s ease-in infinite;
+	}
+
+.bigtitle
+	{
+		width:100%;
+		text-align:center;
+		padding-top:140px;
+		text-shadow: 3px 3px 10px black;
+	}
+
+.bigtitle h2
+	{
+		color:gold;
+		font:normal bolder 50px/55px sans-serif;
+		letter-spacing:10px;
+		margin:0;
+	}
+
+.bigtitle h3
+	{
+		font:normal bolder 35px/38px sans-serif;
+		letter-spacing:3px;
+		color:white; 		
+	}	
+
+.WACall
+	{
+		padding-left:auto;
+		padding-right:auto;
+		margin-top:35px;
+	}
+
+.header img
+	{
+		width:45px; 
+		height:45px;
+		margin-right:10px;
+		margin-top:10px;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+.notelp
+	{
+		color:white;
+		font-weight:bold;
+		font-size:20px;
+		text-shadow: 2px 2px 5px black;
+		display:inline-block;
+		position:relative;
+		top:-15px;
+	}
+
+
+@keyframes trainProgram
+	{
+		0%
+			{
+				background-image:url(SmartWork.jpg);			
+			}
+
+		100%
+			{
+				background-image:url(Seminar.jpg);
+			}
+	}
+
+/* Block Contents ==================================== */
+
+.content
+	{
+		margin:10px 0 30px;
+		text-align:center;
+	}
+
+.Welcome
+	{
+		width:100%;
+		text-align: center;
+	}
+
+.Welcome h1
+	{
+		background-color: black;
+		opacity:75%;
+		color:white;
+		text-shadow: 2px 2px 5px black;
+		padding:10px;
+		font:bold 25px/30px sans-serif;
+		animation:ChangeColor 7s ease infinite;
+	}
+
+@keyframes ChangeColor
+	{
+		0%
+			{
+				background-color: black;
+				color:gold;		
+			}
+		50%
+			{
+				background-color: darkblue;
+				color:pink;		
+			}
+
+		100%
+			{
+				background-color: darkgreen;
+				color:white;
+			}
+	}
+
+.Welcome p
+	{		
+		margin-top:5px;
+		font-size:20px;
+		color:darkgreen;
+		font-weight: bolder;
+
+	}
+
+ /* Customer Choice ====== */
+
+.choose
+	{
+		width:80%;
+		margin:40px auto 30px;
+	}
+
+.product
+	{
+		display:inline-block;
+		height:70px; width: 230px;
+		margin-bottom:50px;
+		background-color: darkgreen;
+		border-radius: 50%;
+		text-align: center;
+		padding:0;
+		color:gold;
+		opacity:70%;
+		font:bold 25px/70px sans-serif;
+		text-shadow: 2px 2px 5px black;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+.gallery
+	{
+		display:inline-block;
+		margin:0px auto;
+		height:70px; width: 230px;
+		background-color: darkgreen;
+		border-radius: 50%;
+		text-align: center;
+		padding:0;
+		margin-left:50px;
+		margin-right:50px;
+		margin-bottom:50px;
+		color:white;
+		opacity:70%;
+		font:bold 25px/70px sans-serif;
+		text-shadow: 2px 2px 5px black;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+.contact
+	{
+		display:inline-block;
+		height:70px; width: 230px;
+		background-color: darkgreen;
+		border-radius: 50%;
+		text-align: center;
+		margin-bottom:50px;
+		padding:0;
+		color:white;
+		opacity:70%;
+		font:bold 25px/70px sans-serif;
+		text-shadow: 2px 2px 5px black;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+.about
+	{
+		height:100px; width: 150px;
+		background-color: darkgrey;
+		border-radius: 50%;
+		margin:100px auto 30px;
+		text-align: center;
+		padding:0;
+		color:white;
+		opacity:80%;
+		font:bold 30px/100px sans-serif;
+		text-shadow: 2px 2px 5px black;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+
+.notes
+	{		
+		margin:0px auto;
+		font-size:20px;
+		color:white;
+		text-shadow: 2px 2px 5px black;
+		font-weight: bolder;
+	}
+
+/* ====== Training Provider ======== */
+.provider
+	{
+		width:70%;
+		margin:50px auto 0px;
+	}
+
+.asti
+	{
+		display:inline-block;
+		height:180px; width: 230px;
+		background-image:url(LogoASTISmall.png);
+		background-size:cover;
+		text-align: center;
+		margin-right:40px;
+		color:gold;
+		font:bold 25px/200px sans-serif;
+		text-shadow: 2px 2px 5px black;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+.ayoplus
+	{
+		display:inline-block;
+		height:210px;
+		background-image:url(LogoBimbel.png);
+		background-size:cover;
+		margin-left:40px;
+		text-align: center;
+		color:white;
+		font:bold 25px/200px sans-serif;
+		text-shadow: 2px 2px 5px black;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+/* Catatan Kaki */
+.footer
+	{
+		width:96%;
+		padding:2%;
+		background-color: grey;
+		opacity: 85%;
+		color:white;
+		text-align:center;
+		font-size:20px;
+	}

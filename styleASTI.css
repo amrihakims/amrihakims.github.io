@@ -1,0 +1,246 @@
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* =============================================== */
+
+
+/* Content of CSS sytle belong to Amri Hakim S */
+body
+	{
+		background-image: url(full-bloom.png);
+		font-family:arial;
+		margin:0;
+	}
+
+.Overtop
+	{
+		width:100%;
+		position:fixed;
+		z-index:10;
+		filter:drop-shadow(3px 3px 3px green);
+		background-color:black;
+		opacity:30%;
+	}
+
+/* Setting Position, Animation of Navigator */
+
+.navigation
+	{
+		float:right;
+		margin-top:0;
+		margin-right:10px;
+	}
+
+.navigation a
+	{
+		text-decoration:none;
+		color:inherit;
+		font-weight: bold;
+		transition:0.3s;
+	}
+
+.navigation a:hover
+	{
+		background-color:lightgreen;
+		color:yellow;
+		font-size:25px;
+
+	}
+
+.navigation ul li
+	{
+		display:inline-block;
+		margin:0 25px;
+		text-shadow: 2px 2px 5px black;
+		color:white;
+	}
+
+
+/* === Setting Background, About ASTI ====== */
+
+.BGAbout
+	{
+		background-image:url(BGAbout.png);
+		height:410px;
+		width:100%;
+		background-size: cover;
+		filter: saturate(300%);
+		padding-top:40px;
+	}
+
+.logoASTI 
+	{
+		background-image: url(logoASTISmall.png);	
+		background-size:cover;	
+		width:180px;
+		height:150px;
+		padding-right:15px;
+		margin:0px auto 0px;
+		filter:drop-shadow(5px 5px 5px black);
+	}
+
+.PTName
+	{
+		font:bold 85px/90px sans,arial;
+		color:white;
+		text-align: center;
+		margin:0px auto 10px;
+		text-shadow: 5px 5px 5px black;
+		letter-spacing:20px;
+	}
+
+.PTCall
+	{
+		color:white;
+		opacity:80%;
+		text-align:center;
+		letter-spacing:2px;
+		font:bold 35px/40px sans-serif;
+		text-shadow: 3px 3px 3px darkgreen;
+	}
+
+.slogan
+	{
+		color:gold;
+		font:italic 25px/28px sans;
+		text-align:center;
+		text-shadow: 3px 3px 3px black;
+	}
+
+/* === Setting CONTENTs, About ASTI ====== */
+
+h1
+	{
+		color:darkgreen;
+		letter-spacing:2px;
+		background-color: lightgrey;
+		text-shadow: 5px 3px 5px white;
+		text-align:center;
+		padding:10px;
+		font:bold 37px/40px arial;
+	}
+
+
+h2
+	{
+		color:darkgreen;
+		margin-up:30px;
+		margin-left:30px;
+		padding:0;
+		font:bold 25px/30px arial;
+		text-shadow: 2px 2px 2px white;
+	}
+
+p
+	{
+		color:black;
+		text-align:justify;	
+		margin:0 30px;
+		font:normal 25px/35px sans-serif;
+		opacity:80%;
+		text-shadow: 2px 2px 2px lightblue;
+	}
+
+.trainer li
+	{
+		color:black;
+		text-align:justify;
+		font:normal 25px/35px arial;	
+		margin:10px 30px;
+		padding:10px;
+		word-spacing:1px;
+	}
+
+.ruanglingkup li
+	{
+		color:black;
+		text-align:justify;
+		font:normal 25px/35px arial;	
+		margin:10px 30px;
+		padding:10px;
+		word-spacing:1px;
+	}
+
+/* === Setting Posisi Logo ISO, About ASTI === */
+
+.logoISO
+	{
+		width:300px;
+		height:100px;
+		float:right;
+	}
+
+.logoISO1
+	{
+		background-image: url(ISO9001.jpg);
+		background-size:cover;
+		width:100px;
+		height:100px;
+		margin-right:50px;
+		display:inline-block;
+	}
+
+.logoISO2
+	{
+		background-image: url(ISO14001.jpg);
+		background-size:cover;
+		width:100px;
+		height:100px;
+		display:inline-block;
+	}
+
+/* === Setting Contact Us, About ASTI === */
+
+.contact
+	{
+		margin-top:200px;
+		width:100%;
+		padding:0px 0 25px;
+		background-color: black;
+		opacity:70%;
+		color:white;
+		font:normal 20px/30px arial;
+		text-align:center;
+	}
