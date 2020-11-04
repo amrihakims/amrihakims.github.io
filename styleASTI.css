@@ -110,14 +110,12 @@ body
 		padding-top:40px;
 	}
 
-.logoASTI 
-	{
-		background-image: url(logoASTISmall.png);	
-		background-size:cover;	
-		width:180px;
-		height:150px;
-		padding-right:15px;
-		margin:0px auto 0px;
+.BGAbout img
+	{	
+		display:block;
+		position:relative;
+		width:200px;
+		margin:0 auto 20px;
 		filter:drop-shadow(5px 5px 5px black);
 	}
 
