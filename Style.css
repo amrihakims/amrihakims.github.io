@@ -273,7 +273,7 @@ body
 
   }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 500px) 
   {
     .header , .header .grad
 	{
@@ -287,25 +287,33 @@ body
 		top:35vw;
 	}  
 
-    .Welcome p
+    .Welcome h1
 	{
-    	font:bold 1.7vw/2vw sans-serif;
+    	font:bold 4vw/4.3vw sans-serif;
 	}  
 
-    .Footer , .Footer span , .Footer p
+    .Welcome p
 	{
-    	font-size:2.3vw;
-    	line-height:2.4vw;
+    	font:bold 3.2vw/3.4vw sans-serif;
+	}  
+	.Home .content
+	{
+    	font:normal 3.2vw/3.4vw sans-serif;
+	}
+
+    .Home .footer, .Home .footer span
+	{
+    	font-size:3vw;
+    	line-height:3.1vw;
 	}  
 
 	.navbar
 	{
-		font:normal 3.5vw/3.7vw sans-serif;
-		position:fixed; 
+		font:normal 4.3vw/4.7vw sans-serif;
 		z-index:1;
 		text-align:center;
 		margin:0 auto 0;
-		bottom:0;
+		top:0;
 	}
 	.navbar a
 	{
@@ -314,7 +322,7 @@ body
 
 	.navbar a:hover
 	{
-		font:italic 4.5vw/5vw sans-serif;
+		font:italic 5.3vw/5.7vw sans-serif;
 		padding:2vw;
 
 	}
