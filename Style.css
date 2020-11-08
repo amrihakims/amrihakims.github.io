@@ -59,31 +59,26 @@ body
 	}
 
 
-/* Block Fixed ============================ */
-.Overtop
-	{
-		width:100%;
-		position:fixed;
-		z-index:10;
-		filter:drop-shadow(3px 3px 3px green);
-
-	}
-
-/* Setting Position, Animation of Navigator */
+/* Navigation Bar ================= */
 
 .navbar
 	{
-		float:right;
-		margin-top:0;
-		margin-right:10px;
+		background-color:black;
+		opacity:60%;
+		overflow:hidden;
+		position:fixed;
+		z-index:1;
+		width:100%;
+		text-align:right;		
+		font:normal 2vw/2.1vw sans-serif;
+		filter:drop-shadow(.3vw .3vw .3vw grey);
 	}
 
 .navbar a
 	{
 		text-decoration:none;
 		color:inherit;
-		font:normal 18px/20px sans-serif;
-		padding:5px;
+		padding:0.2vw;
 		transition:0.3s;
 	}
 
@@ -91,7 +86,8 @@ body
 	{
 		background-color:darkgreen;
 		color:yellow;
-		font-size:25px;
+		font:italic 2.3vw/2.5vw sans-serif;
+		padding:0.5vw;
 		font-weight: bold;
 
 	}
@@ -99,73 +95,71 @@ body
 .navbar ul li
 	{
 		display:inline-block;
-		padding:15px;
-		text-shadow: 2px 2px 5px black;
+		padding:1.5vw;
+		text-shadow: 0.2vw 0.2vw .5vw black;
 		color:white;
 	}
 
 
-/* Block Header =========================== */
+/* Block Header ========================= */
 
 .header
 	{
 		width:100%;
-		height:500px;
-		background-image:url(MyLobby.jpg);
-		background-size:100%;
-		background-position: 0px -200px;
+		height:40vw;
+		background-image:url("MyLobby.jpg");
+		background-size:cover;
+		background-position: center;
 	}
 
-.bgTrans
+.header .grad
 	{
-		position:absolute;
 		width:100%;
-		height:500px;
-		background-color: black;
-		opacity:70%;
-	}
-
-.header h2
-	{
-		display:inline-block;
+		height:40vw;
+		background-color:black;
+		opacity:50%;
 		position:absolute;
-		padding-left:700px;
-		padding-top:210px;
-		color:gold;
-		font:italic 50px/55px sans-serif;
+	}
+
+.HeaderText
+	{
+		position:relative;
+		text-align:right;
+		right:5%;
+		top:20vw;
+    	font:italic 4.2vw/5vw sans-serif;
+    	color:white;
 
 	}
 
-.header span
-	{
-		font:bolder 50px/55px sans-serif;
-		color:lightyellow;
-	}
+.HeaderText span
+  {
+    font-weight: bold;
+    font-style: normal;
+    color:gold;
+  }
 
-.header h3
-	{
-		display:inline-block;
-		position:absolute;
-		padding-left:800px;
-		padding-top:270px;
-		font:normal 35px/38px sans-serif;
-		letter-spacing:2px;
-		color:white; 		
-	}	
+.HeaderText p
+  {
+    color:gold;
+    font-style:normal;
+  }
 
 
-/* Block Contents ==================================== */
+/* Block Content =========================== */
 
 .content
 	{
-		margin:3px 0 30px;
-		text-align:center;
+		margin-top:0.3vw;
+    	font:normal 2vw/2.1vw sans-serif;
+    	color:darkgreen;
+    	text-align:center;
 	}
 
 .Welcome
 	{
 		width:100%;
-		text-align: center;
+		margin-bottom:7vw;
 	}
 
 .Welcome h1
@@ -173,10 +167,17 @@ body
 		background-color: black;
 		opacity:75%;
 		color:white;
-		text-shadow: 2px 2px 5px black;
-		padding:10px;
-		font:bold 25px/30px sans-serif;
+		text-shadow: 0.2vw 0.2vw 0.5vw black;
+		padding:0.5vw;
+		font:bold 2.5vw/2.6vw sans-serif;
 		animation:ChangeColor 7s ease infinite;
+	}
+
+.Welcome p
+	{		
+		margin-top:0.5vw;
+		font:italic 1.4vw/1.6vw sans-serif;
+		font-weight: bolder;
 	}
 
 @keyframes ChangeColor
@@ -199,79 +200,127 @@ body
 			}
 	}
 
-.Welcome p
-	{		
-		margin-top:10px;
-		font-size:30px/40px sans-serif;
-		color:darkgreen;
-		font-weight: bolder;
 
-	}
-
-.support
+.content span
 	{
-		margin:100px auto 30px;
-		text-align: center;
-		padding:0;
-		color:darkblue;
-		opacity:80%;
-		font:normal 40px/70px sans-serif;
+    	font:bold 3vw/3.2vw sans-serif;
+		filter:drop-shadow(0.3vw 0.3vw 0.2vw white);
 	}
 
 
-.notes
-	{		
-		margin:0px auto;
-		font-size:20px;
-		color:darkblue;		
-	}
+
 
 /* ====== Training Provider ======== */
+
 .provider
 	{
 		width:70%;
-		margin:50px auto 0px;
-	}
-
-.asti
-	{
-		display:inline-block;
-		height:210px; width: 230px;
-		background-image:url(LogoASTI.png);
-		background-size:cover;
-		text-align: center;
-		margin-right:40px;
-		color:gold;
-		font:bold 25px/200px sans-serif;
-		text-shadow: 2px 2px 5px black;
-		filter:drop-shadow(5px 5px 5px black);
+		margin:5vw auto 0;
 	}
 
 
 .provider img
 	{
 		display:inline-block;
-		height:210px; width: 230px;
-		margin:0 50px 0;
+		height:17vw; width: 18vw;
+		margin:0 5vw 0;
 		text-align: center;
 		color:white;
-		font:bold 25px/200px sans-serif;
-		text-shadow: 2px 2px 5px black;
-		filter:drop-shadow(5px 5px 5px black);	
+		font:bold 2.5vw/2.8vw sans-serif;
+		filter:drop-shadow(.5vw .5vw .5vw black);	
 	}
 
 
 /* Catatan Kaki */
+
 .footer
 	{
 		width:96%;
 		padding:2%;
-		background-color: grey;
-		opacity: 85%;
+		background-color: black;
+		opacity: 80%;
 		color:white;
 		text-align:center;
-		font:normal 20px/25px sans-serif;
+		font:normal 1.7vw/1.9vw sans-serif;
 	}
+
+.footer span
+	{
+		color:gold;
+		font:bold 2vw/2.1vw arial;
+	}
+
+.footer p
+	{
+		color:gold;
+		font-style:italic;
+	}
+
+
+@media screen and (max-width: 1000px) 
+  {
+    .header , .header .grad
+	{
+		height:55vw;
+	}  
+
+    .HeaderText
+	{
+    	font:normal 5vw/5.7vw sans-serif;
+		right:5%;
+		top:28vw;
+	}  
+
+  }
+
+@media screen and (max-width: 600px) 
+  {
+    .header , .header .grad
+	{
+		height:70vw;
+	}  
+
+    .HeaderText
+	{
+    	font:normal 6.5vw/7.2vw sans-serif;
+		right:5%;
+		top:35vw;
+	}  
+
+    .Welcome p
+	{
+    	font:bold 1.7vw/2vw sans-serif;
+	}  
+
+    .Footer , .Footer span , .Footer p
+	{
+    	font-size:2.3vw;
+    	line-height:2.4vw;
+	}  
+
+	.navbar
+	{
+		font:normal 3.5vw/3.7vw sans-serif;
+		position:fixed; 
+		z-index:1;
+		text-align:center;
+		margin:0 auto 0;
+		bottom:0;
+	}
+	.navbar a
+	{
+		margin: 0 1vw 0;
+	}
+
+	.navbar a:hover
+	{
+		font:italic 4.5vw/5vw sans-serif;
+		padding:2vw;
+
+	}
+
+
+  }
 
 
 /* Style untuk Page About ASTI ===== */
