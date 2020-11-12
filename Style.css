@@ -1,0 +1,597 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Syle CSS by AMRI HAKIM S, Copyright 2020 */
+/* Dedicated for Training Public Website */
+
+/* Common text at All Body :
+h1 : Judul Cover
+h2 : Judul Content
+h3 : highlight (catch attention)
+h4 : text content
+h5 : support text content
+h6 : hidden text
+
+p  : normal content  */
+
+
+p
+	{
+		color:black;
+		text-align:justify;	
+		margin:0 30px;
+		font:normal 25px/35px sans-serif;
+		opacity:80%;
+		text-shadow: 2px 2px 2px lightblue;
+	}
+
+h1
+	{
+		font:normal 4.5vmax/4.8vmax sans-serif;
+		text-shadow: .2vmax .2vmax 0 black;
+ 		color:white;
+	}
+
+
+h2
+	{
+		font:bold 4vmax/4.2vmax sans-serif;
+		text-shadow: .2vmax .2vmax 0 black;
+	}
+
+
+h3
+	{
+		font:normal 2.7vmax/3vmax sans-serif;
+		font-weight: bold;
+ 		color:darkgreen;
+	}
+
+h4
+	{
+		font:normal 2vmax/2.3vmax sans-serif;
+	}
+
+h5
+	{
+		font:italic 1.5vmax/1.7vmax sans-serif;
+	}
+
+
+/* Navigation Bar ================= */
+
+.navbar
+	{
+		width:60%;
+		height:5vmax;
+		position:fixed;
+		z-index:5;
+		right:0;
+	}
+
+.emptybar
+	{
+		width:40%;
+		height:5vmax;
+		background-color: darkgreen;
+		position:fixed;
+		z-index:5;
+		left:0;
+		opacity:80%;
+	}
+
+.navbar a
+	{
+    	width:25%;
+    	line-height: 5vmax;
+		font:normal 1.7vmax/5vmax sans-serif;
+      	text-align:center;				
+    	text-decoration: none;
+ 		background-color: darkgreen;
+ 		opacity:80%;
+    	color: white;	
+    	float:left;
+		transition:0.3s;
+	}
+
+.navbar a:hover
+	{
+		background-color:darkgreen;
+		color:yellow;
+		font-weight: bold;
+		font-size:2vmax;
+
+	}
+
+.navbar i
+	{
+  		display: inline;
+  		margin:0 .5vw;
+	}
+
+
+/* Logo Atas ================= */
+
+.toplogo
+	{
+		width:40%;
+		height:5vmax;
+		padding:0 0.7vmax;
+		position:absolute;
+		color:white;
+		z-index:10;
+		box-sizing: border-box;
+	}
+
+.toplogo img
+	{
+		height:4vmax;
+		width:4vmax;
+		margin:.5vmax .5vmax;    
+		display:inline-block;
+		float:left;
+		box-sizing: border-box;		
+	}
+
+.toplogo h4
+	{
+		display:inline-block;
+		float:left;
+    	line-height: 5vmax;
+    	font-style: italic;
+		text-shadow: .2vw .2vw 0vw black;
+    	margin:0 1vw;
+	}
+
+.toplogo span
+	{
+		font-weight: bold;
+		font-style: normal;
+		color:gold;
+		font-size:2vmax;
+	}
+
+/* Style for Home Page ====== */
+
+body
+	{
+		background-image:url(bg5.png);
+	}
+
+
+/* Block Header ========================= */
+
+.headHome
+	{
+		width:100%;
+		height:40vmax;
+		background-image:url("MyLobby.jpg");
+		background-size:cover;
+		background-position: center;
+		position:absolute;
+		box-sizing:border-box;
+	}
+
+.grad
+	{
+		width:100%;
+		height:40vmax;
+		background-color:rgba(0, 0, 0, 0.5);
+		position:relative;
+		text-align:right;
+		box-sizing:border-box;
+	}
+
+.grad h1
+	{
+		display:inline-block;
+		margin-top:17vmax;
+		margin-right:4vw;
+		font-weight:bolder;
+    	color:gold;
+	}
+
+.grad span
+ 	 {
+  	  	color:white;
+  	  	margin-left:1vw;
+  	  	font-style:italic;
+  	}
+
+
+.grad h2
+  	{
+    	color:gold;
+    	margin-top:1.2vmax;
+		margin-right:4vw;
+    	font-style:normal;
+/*    	animation:ChangeText 6s case-in infinite;*/
+  	}
+
+/* Change Text at Cover ========== */
+
+/*@keyframes ChangeText
+	{
+		0%
+			.grad h2::after
+			{
+				content: "ONLINE";
+			}
+
+		50%
+			.grad h2::after
+			{
+				content: "IN-HOUSE TRAINING";
+			}
+
+		100%
+			.grad h2::after
+			{
+				content: "LONG-THERM TRAINING";
+			}
+
+	}
+*/
+
+/* Block Content =================== */
+
+.content
+	{
+    	font:normal 2vmax/2.1vmax sans-serif;
+    	color:darkgreen;
+    	text-align:center;
+	}
+
+.content h4
+	{
+    	margin:0.5vmax 0;
+    	font-style:italic;
+	}
+.Welcome
+	{
+		margin-top:.5vmax;
+		margin-bottom:7vmax;
+		width:100%;
+	}
+
+.Welcome h3
+	{
+		opacity:75%;
+		padding:1vmax;
+		animation:ChangeColor 7s ease infinite;
+	}
+
+
+@keyframes ChangeColor
+	{
+		0%
+			{
+				background-color: black;
+				color:gold;		
+			}
+		50%
+			{
+				background-color: darkgrey;
+				color:lightgreen;		
+			}
+
+		100%
+			{
+				background-color: darkgreen;
+				color:white;
+			}
+	}
+
+
+/* ====== Training Provider ======== */
+
+.provider
+	{
+		width:75%;
+		height:30vmax;
+		margin-left:auto;
+		margin-right:auto;
+		filter:drop-shadow(.3vmax .3vmax 0 black);
+	}
+
+.provider .pro1
+	{
+		width:50%;
+		height:30vmax;
+		box-sizing:border-box;
+		float:left;
+	}
+	
+.provider .pro2
+	{
+		width:50%;
+		height:30vmax;
+		box-sizing:border-box;
+		float:left;
+	}
+
+.pro1 img
+	{
+		height:17vmax;
+		margin:5vmax auto;
+	}
+
+.pro2 img
+	{
+		height:17vmax;
+		margin:5vmax auto;
+	}
+
+.textprovider
+	{
+		width:75%;
+		margin-left:auto;
+		margin-right:auto;
+		position:relative;
+		top:-5vmax;
+		font-size:2.4vmax;
+		color:darkgrey;
+	}
+
+.text1
+	{
+		width:50%;
+		text-align: center;
+		float:left;
+	}
+
+.text2
+	{
+		width:50%;
+		text-align: center;
+		float:left;
+	}
+
+/* Catatan Kaki */
+
+.footer
+	{
+		width:100%;
+		padding:3vmax 5vw;
+		background-color: darkgreen;
+		opacity: 80%;
+		color:white;
+		text-align:center;
+		font:normal 2vmax/2.3vmax sans-serif;
+		box-sizing: border-box;
+	}
+
+.footer span
+	{
+		color:gold;
+	}
+
+/* Style untuk Page About ASTI ===== */
+
+.ASTIPage
+	{
+		background-image: url(full-bloom.png);
+		font-family:sans-serif;
+	}
+
+/* Header Cover of About ASTI ===== */
+
+.headASTI
+	{		
+		width:100%;
+		height:50vmax;
+		background-image:url(BGAbout.png);
+		background-size: cover;
+		filter: saturate(300%);
+		box-sizing:border-box;
+		color:white;
+		text-align:center;
+		text-shadow: .3vmax .3vmax 0 black;
+		margin-bottom:0.5vmax;
+	}
+
+
+.headASTI img
+	{	
+		display:block;
+		padding-top:9vmax;
+		height:15vmax;
+		margin:0 auto 2vmax;
+		filter:drop-shadow(.5vmax .5vmax 0 black);
+	}
+
+.headASTI h1
+	{
+		font:bold 7vmax/8vmax sans-serif;
+		margin:0 auto 1vmax;
+		letter-spacing:2vmax;
+	}
+
+.headASTI h2
+	{
+		color:white;
+		letter-spacing:0.2vmax;
+		font:bold 2.5vmax/3vmax sans-serif;
+	}
+
+.headASTI h3
+	{
+		color:gold;
+		font:italic 2.2vmax/2.4vmax sans-serif;
+		text-shadow: .2vmax .2vmax 0 darkgreen;
+	}
+
+
+/* === Setting CONTENTs, About ASTI ====== */
+
+.contentASTI h2
+	{
+		color:white;
+		letter-spacing:0.1vmax;
+		background-color: #8FBC8F;
+		opacity:80%;
+		text-align:center;
+		padding:0.5vmax;
+		font:bold 2.8vmax/3.4vmax sans-serif;
+		box-sizing: border-box;
+	}
+
+
+.contentASTI p
+	{
+		color:darkgreen;
+		text-align:justify;
+		margin-up:3vmax;
+		margin-left:3vmax;
+		padding:0;
+		font:normal 2vmax/3vmax sans-serif;
+		word-spacing:.1vmax;
+	}
+
+
+.contentASTI li
+	{
+		color:darkgreen;
+		text-align:justify;
+		font:normal 2vmax/4vmax sans-serif;
+		margin:2vmax 5vmax;
+		word-spacing:.1vmax;
+	}
+
+
+/* === Setting Posisi Logo ISO, About ASTI === */
+
+.logoISO
+	{
+		height:10vmax;
+		width:95%;
+		margin-bottom: 3vmax;
+	}
+
+.logoISO1
+	{
+		background-image: url(ISO9001.jpg);
+		background-size:cover;
+		height:10vmax;
+		width:10vmax;
+		margin-right:10vmax;
+		float:right;
+	}
+
+.logoISO2
+	{
+		background-image: url(ISO14001.jpg);
+		background-size:cover;
+		height:10vmax;
+		width:10vmax;
+		float: right;
+	}
+
+
+/* === RESPONSIVE for Screen Display === */
+
+@media screen and (max-width: 600px) 
+  {
+	.toplogo
+	{
+		width:100%;
+	}          
+
+  	.emptybar
+  	{
+  		width:0%;
+  	}
+
+	.navbar
+	{
+		position:fixed;
+		width:100%;
+		height:8vmax;
+		z-index:10;
+		bottom:0;
+    	box-sizing:border-box;
+    	border-top:.1vmax solid #B0C4DE;	
+	}
+   
+	.navbar a
+	{
+    	font:normal 1.4vmax/2vmax sans-serif;
+    	width:25%;
+    	height:8vmax;
+ 		background-color: #F5F5F5;
+ 		opacity:100%;
+    	color: darkgreen;
+    	padding:.7vmax 0.1vmax;
+    	border-right:.1vmax solid grey;
+    	box-sizing:border-box;				
+	}   
+
+	.navbar i 
+	{
+		font-size: 3.5vmax;
+  		display: block;
+  		margin:0.3vmax auto;
+	}
+
+	.navbar a:hover
+	{
+		background-color:darkgreen;
+		color:white;
+		font-weight: bold;
+
+	}
+
+	.fixbawah
+	{
+		width:100%;
+		height:8vmax;
+		background-color: grey;
+		opacity:70%;
+	}
+  }
+
