@@ -157,6 +157,7 @@ h5
 
 /* Logo Atas ================= */
 
+
 .toplogo
 	{
 		width:40%;
@@ -170,9 +171,9 @@ h5
 
 .toplogo img
 	{
-		height:4vmax;
-		width:4vmax;
-		margin:.5vmax .5vmax;    
+		height:3.8vmax;
+		width:3.8vmax;
+		margin:.5vmax .5vmax .2vmax;    
 		display:inline-block;
 		float:left;
 		box-sizing: border-box;		
