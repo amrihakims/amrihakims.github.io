@@ -9,15 +9,11 @@
   <style>
   	.container
   		{
-  			display:grid;
   			padding:1.5vmax;
   			margin-top:1vmax;
   			text-align: center;
   			color:darkblue;
   			box-sizing:border-box;
-  			grid-template-areas:"GoogleMap aside";
-    		grid-template-columns:1fr 1.2fr;
-    		grid-template-rows:1fr 1fr;
   		}
 
   	.content
@@ -38,7 +34,6 @@
 
   	.aside
   		{
-  			grid-area:aside;
   			padding:30px 30px 10px 30px;
 			color:black;
 			text-align:center;
@@ -60,13 +55,28 @@
   		}
 
 
-  	  @media screen and (max-width: 700px)
-  {
-      .container {
-        grid-template-areas:
-        	"GoogleMap GoogleMap"
-            "aside aside";
+  	  @media screen and (min-width: 900px)
+ 	 {
+
+  	  .GoogleMap
+  		{
+  			grid-area:GoogleMap;
+  		} 	
+
+  	  .aside
+  		{
+  			grid-area:aside;
+  		}  	
+
+      .container 
+      	{
+      		display:grid;
+  			grid-template-areas:"GoogleMap aside";
+    		grid-template-columns:1fr 1.2fr;
+    		grid-template-rows:1fr 1fr;
+      	}
       }
+
   </style>
 
 </head>
