@@ -1,0 +1,707 @@
+@font-face
+	{
+		font-family: "Work Sans";
+
+		src:url('WorkSans-ExtraLight.ttf') format('truetype');
+		src:url('WorkSans-ExtraLightItalic.ttf') format('truetype');
+		src:url('WorkSans-ExtraBold.ttf') format('truetype');
+	}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Syle CSS by AMRI HAKIM S, Copyright 2020 */
+/* Dedicated for Training Public Website */
+
+/* Common text at All Body :
+
+h1 until h6 are BOLD text
+===========================
+h1 : Judul Cover (32px)
+h2 : Judul Content (24px)
+h3 : highlight (catch attention) (19px)
+h4 : text content (16px) -- standard size <====
+h5 : support text content (13px)
+h6 : hidden text (10.7px)
+
+p  : normal content (size : 16px)  */
+
+
+p
+	{
+		color:black;
+		text-align:justify;	
+		margin:0 30px;
+		font:normal 25px/35px sans-serif;
+	}
+
+h1
+	{
+		font:bold 4.5vmax/4.8vmax sans-serif;
+		text-shadow: .2vmax .2vmax 0 black;
+ 		color:white;
+	}
+
+
+h2
+	{
+		font:bold 4vmax/4.2vmax sans-serif;
+		text-shadow: .2vmax .2vmax 0 black;
+	}
+
+
+h3
+	{
+		font:normal 2.7vmax/3vmax sans-serif;
+		font-weight: bold;
+ 		color:darkgreen;
+	}
+
+h4
+	{
+		font:normal 2vmax/2.3vmax sans-serif;
+	}
+
+h5
+	{
+		font:italic 1.5vmax/1.7vmax sans-serif;
+	}
+
+
+/* Navigation Bar ================= */
+
+.navbar
+	{
+		width:60%;
+		position:fixed;
+		z-index:5;
+		right:0;
+	}
+
+.emptybar
+	{
+		width:40%;
+		height:5vmax;
+		background-color: darkgreen;
+		position:fixed;
+		z-index:5;
+		left:0;
+		opacity:80%;
+	}
+
+.navbar a
+	{
+    	width:25%;
+		font:normal 1.7vmax/5vmax sans-serif;
+      	text-align:center;				
+    	text-decoration: none;
+ 		background-color: darkgreen;
+ 		opacity:80%;
+    	color: white;	
+    	float:left;
+		transition:0.3s;
+	}
+
+.navbar a:hover
+	{
+		background-color:darkblue;
+		color:yellow;
+		font-weight: bold;
+	}
+
+.navbar i
+	{
+  		display: inline;
+  		margin:0 .5vw;
+	}
+
+
+/* Logo Atas ================= */
+
+.toplogo
+	{
+		width:40%;
+		height:5vmax;
+		padding:0 0.7vmax;
+		position:absolute;
+		color:white;
+		z-index:10;
+		box-sizing: border-box;
+	}
+
+.toplogo img
+	{
+		height:3.8vmax;
+		width:3.8vmax;
+		margin:.5vmax .5vmax .2vmax;    
+		display:inline-block;
+		float:left;
+		box-sizing: border-box;		
+	}
+
+.toplogo h4
+	{
+		display:inline-block;
+		float:left;
+    	line-height: 5vmax;
+    	font-style: italic;
+		text-shadow: .2vw .2vw 0vw black;
+    	margin:0 1vw;
+	}
+
+.toplogo span
+	{
+		font-weight: bold;
+		font-style: normal;
+		color:gold;
+		font-size:2vmax;
+	}
+
+.WAContact
+	{
+		display:scroll;
+		position:fixed;
+		z-index:900;
+		bottom:1.5vmax;
+		right:2vmax;
+	}
+
+.WAContact img
+	{
+		height:4vmax;
+	}
+
+/* Style for Home Page ====== */
+
+body
+	{
+		background-image:url(bg5.png);
+	}
+
+
+/* Block Header ========================= */
+
+.headHome
+	{
+		width:100%;
+		height:40vmax;
+		background-image:url("CofeeBooks.jpg");
+		background-size:cover;
+		background-position: center;
+		position:absolute;
+		box-sizing:border-box;
+	}
+
+.grad
+	{
+		width:100%;
+		height:40vmax;
+		background-color:rgba(0, 0, 0, 0.5);
+		position:relative;
+		text-align:right;
+		box-sizing:border-box;
+	}
+
+.grad h1
+	{
+		display:inline-block;
+		margin-top:17vmax;
+		margin-right:4vw;
+		font-weight:bolder;
+    	color:gold;
+	}
+
+.grad span
+ 	 {
+  	  	color:white;
+  	  	margin-left:1vw;
+  	  	font-style:italic;
+  	  	font-weight: normal;
+  	}
+
+
+.grad h2
+  	{
+    	color:gold;
+    	margin-top:1.2vmax;
+		margin-right:4vw;
+    	font-weight:normal;
+    	font-family: 'Dancing Script', cursive;
+  	}
+
+/* Block Content =================== */
+
+.content
+	{
+		font:bold 2vmax/2.3vmax sans-serif;
+    	color:darkgreen;
+    	text-align:center;
+	}
+
+.Welcome
+	{
+		margin-top:0.5vmax;
+		margin-bottom:7vmax;
+		width:100%;
+		position:relative;
+		z-index:3;
+	}
+
+.Welcome h3
+	{
+		opacity:75%;
+		padding:0.5vmax 0;
+		animation:ChangeColor 7s ease infinite;
+	}
+
+
+@keyframes ChangeColor
+	{
+		0%
+			{
+				background-color: black;
+				color:gold;		
+			}
+		50%
+			{
+				background-color: darkgrey;
+				color:lightgreen;		
+			}
+
+		100%
+			{
+				background-color: darkgreen;
+				color:white;
+			}
+	}
+
+
+/* ====== Training Provider ======== */
+
+.provider
+	{
+		width:100%;
+		text-align:center;
+		color:darkgreen;
+		margin-top:5vmax;
+	}
+
+.pro1 , .pro2
+	{
+		display:inline-block;
+		width:50%;
+		font:bold 2vmax/2.3vmax sans-serif;
+	}
+	
+
+.provider img
+	{
+		height:17vmax;
+		filter:drop-shadow(.3vmax .3vmax 0 black);
+	}
+
+.provider a
+	{
+    	width:10vmax;
+    	display:inline-block;
+    	margin:0 center;
+		font:bold 1.5vmax/2vmax sans-serif;
+		border-radius:10%;
+      	text-align:center;				
+    	text-decoration: none;
+    	padding:.2vmax .1vmax;
+ 		background-color: darkred;
+    	color: white;	
+	}
+
+.provider a:hover
+	{
+		background-color:darkblue;
+		color:yellow;
+		font-weight: bold;
+	}
+
+
+/* Catatan Kaki */
+
+.footer
+	{
+		width:100%;
+		padding:3vmax 5vw;
+		background-color: darkgreen;
+		opacity: 80%;
+		color:white;
+		text-align:center;
+		font:normal 2vmax/2.3vmax sans-serif;
+		box-sizing: border-box;
+	}
+
+.footer span
+	{
+		color:gold;
+	}
+
+/* Style untuk Page About ASTI ===== */
+
+.ASTIPage
+	{
+		font-family:sans-serif;
+	}
+
+/* Header Cover of About ASTI ===== */
+
+
+.headASTI
+	{
+		width:100%;
+		height:40vmax;
+		background-image:url(Coding.jpg);
+		background-size:cover;
+		background-position: center;
+		position:absolute;
+		box-sizing:border-box;
+	}
+
+.gradASTI
+	{
+		width:100%;
+		height:40vmax;
+		background-color:rgba(0, 80, 0, 0.5);
+		position:relative;
+		box-sizing:border-box;
+		color:white;
+		text-align:center;
+		text-shadow: .3vmax .3vmax 0 black;
+		margin-bottom:0.5vmax;
+	}
+
+
+.gradASTI img
+	{	
+		display:block;
+		padding-top:7vmax;
+		height:12vmax;
+		margin:0 auto 2vmax;
+		filter:drop-shadow(.5vmax .5vmax 0 black);
+	}
+
+.gradASTI h1
+	{
+		font:bold 7vmax/8vmax sans-serif;
+		margin:0 auto 1vmax;
+		letter-spacing:2vmax;
+	}
+
+.gradASTI h2
+	{
+		letter-spacing:0.2vmax;
+		font:bold 2.5vmax/3vmax sans-serif;
+	}
+
+.gradASTI h3
+	{
+		color:gold;
+		font:italic 2.2vmax/2.4vmax sans-serif;
+		text-shadow: .2vmax .2vmax 0 darkgreen;
+	}
+
+
+/* === Setting CONTENTs, About ASTI ====== */
+
+.contentASTI h2
+	{
+		color:white;
+		letter-spacing:0.1vmax;
+		background-color: #8FBC8F;
+		opacity:80%;
+		text-align:center;
+		padding:0.5vmax;
+		font:bold 2.8vmax/3.4vmax sans-serif;
+		box-sizing: border-box;
+	}
+
+.FrontASTI
+	{
+		height:20vmax;
+		float:right;
+		margin-left:2vmax;
+		margin:0 3vmax 0 2vmax;
+		border:.5vmax solid white;
+	}
+
+.Mejakerja
+	{
+		height:15vmax;
+		float:left;
+		margin:0 2vmax 1.5vmax 3vmax;
+		border:.5vmax solid white;
+	}
+
+
+.contentASTI p
+	{
+		color:darkgreen;
+		text-align:justify;
+		margin-up:3vmax;
+		margin-left:3vmax;
+		padding:0;
+		font:normal 2vmax/3vmax sans-serif;
+		word-spacing:.1vmax;
+	}
+
+.contentASTI span
+	{
+		color:white;
+		margin-up:3vmax;
+		padding:0.3vmax;
+		font:bold 2vmax/3vmax sans-serif;
+		word-spacing:.1vmax;
+		text-shadow: 0 0 0.5vmax darkgreen;
+	}
+
+.contentASTI li
+	{
+		color:darkgreen;
+		text-align:justify;
+		font:normal 2vmax/4vmax sans-serif;
+		margin:1vmax 5vmax;
+		word-spacing:.1vmax;
+	}
+
+/* Photo Trainer ASTI =========== */
+.phototrainer
+	{
+		width:100%;
+		text-align:center;
+	}
+
+.trainer01, .trainer02, .trainer03
+	{
+		display:inline-block;
+		width:33%;
+		font:bold 1.7vmax/2vmax sans-serif;
+
+	}
+
+.phototrainer img
+	{
+		height:15vmax;
+		border-radius: 45%;
+	}
+
+/* === Setting Posisi Logo ISO, About ASTI === */
+
+.logoISO
+	{
+		height:10vmax;
+		width:95%;
+		margin-bottom: 3vmax;
+	}
+
+.logoISO1
+	{
+		background-image: url(ISO9001.jpg);
+		background-size:cover;
+		height:10vmax;
+		width:10vmax;
+		margin-right:10vmax;
+		float:right;
+	}
+
+.logoISO2
+	{
+		background-image: url(ISO14001.jpg);
+		background-size:cover;
+		height:10vmax;
+		width:10vmax;
+		float: right;
+	}
+
+
+/* Photo Lisensi ASTI =========== */
+
+.lisensiASTI
+	{
+		width:100%;
+		text-align:center;
+	}
+
+.surat1, .surat2, .surat3, .surat4
+	{
+		display:inline-block;
+		width:25%;
+		font:bold 1.7vmax/2vmax sans-serif;
+
+	}
+
+.lisensiASTI img
+	{
+		height:20vmax;
+	}
+
+/* === RESPONSIVE for Screen Display === */
+
+@media screen and (max-width: 1500px) 
+  {
+  	.emptybar
+  	{
+  		opacity:0%;
+  		width:50%;
+
+  	}
+
+  	.navbar
+  	{
+  		width:50%;
+  		
+  	}
+      
+	.navbar a
+	{
+		font:normal 1.4vmax/4vmax sans-serif;
+	} 
+} 
+
+@media screen and (max-width: 700px) 
+  {
+	.toplogo
+	{
+		width:100%;
+	}      
+
+  	.emptybar
+  	{
+  		width:0%;
+  	}
+
+  	h5
+  	{
+		font:italic 2.2vmax/2.5vmax sans-serif;	
+		padding:0 20px;	
+  	}
+
+	.navbar
+	{
+		position:fixed;
+		width:100%;
+		height:8vmax;
+		z-index:10;
+		bottom:0;
+    	box-sizing:border-box;
+    	border-top:.1vmax solid #B0C4DE;	
+	}
+   
+	.navbar a
+	{
+    	font:normal 1.7vmax/2vmax sans-serif;
+    	width:25%;
+    	height:8vmax;
+ 		background-color: #F5F5F5;
+ 		opacity:100%;
+    	color: darkgreen;
+    	padding:.7vmax 0.1vmax;
+    	border-right:.1vmax solid grey;
+    	box-sizing:border-box;				
+	}   
+
+	.navbar i 
+	{
+		font-size: 3.5vmax;
+  		display: block;
+  		margin:0.3vmax auto;
+	}
+
+	.navbar a:hover
+	{
+		background-color:darkgreen;
+		color:white;
+		font-weight: bold;
+
+	}
+
+	.trainer01, .trainer02, .trainer03, .pro1, .pro2, .surat1, .surat2, .surat3, .surat4,
+	.content
+	{
+		display:block;
+		width:100%;
+		font:bold 3vmax/3.2vmax sans-serif;
+		color:darkgreen;
+	}
+
+
+	.lisensiASTI img
+	{
+		height:50vmax;
+	}
+
+
+.phototrainer img, .provider img
+	{
+		height:25vmax;
+	}
+
+.WAContact
+	{
+		bottom:7.5vmax;
+		right:2vmax;	
+	}
+
+.WAContact img
+	{
+		height:7vmax;
+	}
+
+	.fixbawah
+	{
+		width:100%;
+		height:8vmax;
+		opacity:70%;
+	}
+  }
+
