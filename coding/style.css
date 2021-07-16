@@ -530,11 +530,11 @@ a {
 }
 
 .office span {
-	font-size:20px;
+	font-size:18px;
 	color:#FA8072;
 	position:relative;
 	top:20px;
-	letter-spacing:3px;
+	letter-spacing:2px;
 	font-family: 'Vegan', serif;
 	filter:brightness(120%);
 }
