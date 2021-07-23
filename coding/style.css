@@ -135,6 +135,12 @@ body {
 	margin-right: 20px;
 	background-image: url(../logo/Bimbel.png);
 	background-size: cover;
+	animation: animelogo 0.7s ease;
+}
+
+@keyframes animelogo {
+	0% { width:10px; height:10px;}
+	100% {width:60px; height:60px;}
 }
 
 .nama span {
