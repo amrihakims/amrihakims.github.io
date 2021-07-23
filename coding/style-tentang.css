@@ -1,0 +1,90 @@
+#judulLokasi {
+	margin:100px 30px 50px;
+}
+
+.lokasi {
+	display:flex;
+	margin:20px 30px;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.GoogleMap {
+	width:50%;
+	height:350px;
+	border:3px solid lightgrey;
+}
+
+.addkami {
+	width:45%;
+}
+
+.addkami span {
+	font-size: 23px;
+	color:#008080;
+	letter-spacing: 3px;
+}
+
+.addkami p {
+	font-size: 14px;
+	color:white;
+	background-color: #008080;
+	padding:2px 10px;
+	box-sizing: border-box;
+	display:inline-block;
+}
+
+.Sertifikasi {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
+
+.Sertifikasi p {
+	margin:20px 30px;
+	font-size:17px;
+}
+
+.Sertifikasi div {
+	width:30%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#portrait img {
+	width:45%;
+	padding:10px auto;
+}
+
+#landscape img {
+	width:70%;
+	padding:10px auto;
+}
+
+/*======================================*/
+/*CSS untuk Responsive Website 
+ ukuran Tablet*/
+
+@media screen and (max-width:1000px) {
+	.GoogleMap, .addkami {
+		width:90%;
+		height: 350px;
+		margin-bottom:30px;
+	}
+
+	.lokasi {
+		margin:0 20px;
+	}
+
+	.Sertifikasi div {
+		width:45%;
+	}
+}
+
+@media screen and (max-width:650px) {
+	.Sertifikasi div {
+		width:90%;
+	}
+}
