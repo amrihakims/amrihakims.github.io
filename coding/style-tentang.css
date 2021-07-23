@@ -68,6 +68,9 @@
  ukuran Tablet*/
 
 @media screen and (max-width:1000px) {
+	.top ul {
+		display:inline-block;
+	}
 	.GoogleMap, .addkami {
 		width:90%;
 		height: 350px;
