@@ -32,6 +32,9 @@
  ukuran Tablet*/
 
 @media screen and (max-width:1000px) {
+	.top ul {
+		display:inline-block;
+	}
 	.photo div {
 		width:47%;
 	}
