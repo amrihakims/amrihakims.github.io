@@ -11,6 +11,7 @@ window.CRISP_WEBSITE_ID="a09e3c06-e275-47dc-91d6-d4e45bf99bcd";
 
 function ClosePage() {
 	window.close();
+	document.close();
 }
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwOi7chKubwmJwydH1SZ4e5GvIx9-LNa7L4CLxIGGIFHUkDjN43p4__G_UWD4AHvHi_Pg/exec' 
