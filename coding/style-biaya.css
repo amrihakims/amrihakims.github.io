@@ -223,6 +223,7 @@ button {
 	color:blue;
 	right:30px;
 	bottom: 20px;
+	display:none;
 }
 
 #load img {
@@ -243,10 +244,14 @@ button {
 	}
 }
 
-#kirim {
+#kirim, #bersihkan {
 	background-color: #008080;
 	right:30px;
 	bottom: 20px;
+}
+
+#bersihkan {
+	display:none;
 }
 
 button:hover {
