@@ -647,6 +647,7 @@ a {
 .office p {
 	display: flex;
 	padding:3px 0;
+	font-family: 'Raleway', serif;
 	text-overflow: wrap;
 }
 
